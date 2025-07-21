@@ -3,10 +3,14 @@ import React from 'react'
 import { LuNetwork } from 'react-icons/lu'
 import Link from 'next/link'
 import { HiBars3BottomRight } from 'react-icons/hi2'
-import ScrollShadowWrapper from './ScrollShadowWrapper'
+import ScrollShadowWrapper from './NavbarCSR/ScrollShadowWrapper'
+import { CgClose } from 'react-icons/cg'
 
+type Props = {
+  openNav: () => void;
+}
 
-const Nav = () => {
+const Nav = ({openNav}:Props) => {
   return (
     <ScrollShadowWrapper>
     // Entire Navbar
@@ -53,8 +57,10 @@ const Nav = () => {
                 </button>
 
             {/* Burger icon for mobile */}
-                <HiBars3BottomRight className='lg:hidden w-8 h-8 text-black' />
+                <HiBars3BottomRight onClick={openNav}className='lg:hidden w-8 h-8 text-black' />
             </div>
+
+            
 
         </div>
     </div>
