@@ -14,15 +14,15 @@ const MobileNav = ({showNav, closeNav}:MobileNavProps) => {
   return (
   <>
     {/* Overlay */}
-    <div  onClick={closeNav} className={`fixed ${navOpen} inset-0 transform transition-all right-0 duration-500 z-[100002] bg-black opacity-80 w-full h-screen`}>
+    <div  onClick={closeNav} className={`fixed dark:bg-neutral-950 ${navOpen} inset-0 transform transition-all right-0 duration-500 z-[100002] bg-black opacity-80 w-full h-screen`}>
     </div>
     {/* Mobile Nav link */}
-    <div className={`flex flex-col fixed ${navOpen} h-full justify-center transform transition-all duration-500 delay-300 w-[45%] sm:w-[50%] bg-cyan-800 space-y-6 z-[1000050] right-0 text-white`}>
+    <div className={`flex flex-col fixed text-white dark:text-black dark:bg-white ${navOpen} h-full justify-center transform transition-all duration-500 delay-300 w-[45%] sm:w-[50%] bg-cyan-800 space-y-6 z-[1000050] right-0 `}>
       {NavLinks.map((link) => (
         <Link
             key={link.id}
             href={link.url}
-            className='text-sm text-white w-fit ml-12 border-b-[1.5px] pb-1 border-white sm:text-[30px] hover:scale-105' 
+            className='text-sm text-white dark:text-black w-fit ml-12 border-b-[1.5px] pb-1 border-white dark:border-black sm:text-[30px] hover:scale-105' 
             > 
             <p>{link.label}</p>
         </Link>

@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Nav from './Nav'
 import MobileNav from './MobileNav'
+import ThemeToggler from '@/components/Helper/ThemeToggler'
 
 
 const ResponsiveNav = () => {
@@ -12,10 +13,10 @@ const ResponsiveNav = () => {
   const closeNavHandler = () => setShowNav(false)
   return (
     <>
- 
+    {/* Navbar */}
+   
       <Nav openNav={openNavHandler}/>
       <MobileNav showNav={showNav} closeNav={closeNavHandler}/>
-      
     </>
   )
 }
