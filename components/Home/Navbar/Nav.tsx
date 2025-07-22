@@ -4,7 +4,7 @@ import { LuNetwork } from 'react-icons/lu'
 import Link from 'next/link'
 import { HiBars3BottomRight } from 'react-icons/hi2'
 import ScrollShadowWrapper from './NavbarCSR/ScrollShadowWrapper'
-import { CgClose } from 'react-icons/cg'
+
 
 type Props = {
   openNav: () => void;
@@ -13,7 +13,7 @@ type Props = {
 const Nav = ({openNav}:Props) => {
   return (
     <ScrollShadowWrapper>
-    // Entire Navbar
+     {/* Entire Navbar */}
     <div className='fixed top-0 w-full z-[10000] h-[12vh] bg-white transition-all duration-200'>
       {/* Upper Holder Div */}
         <div className="max-w-[1500px] w-[92%] mx-auto flex items-center justify-between h-full">
@@ -27,7 +27,7 @@ const Nav = ({openNav}:Props) => {
                     <LuNetwork className='w-5 h-5 text-white' />
                     </div>
                     <h1 className='font-bold hidden sm:block md:text-2xl text-cyan-800 '>
-                    Altraa
+                    CAREERBASE
                     </h1>
                 </div>
 
