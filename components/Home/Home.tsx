@@ -5,7 +5,7 @@ import Job from './Job/Job'
 
 const Home = () => {
   return (
-    <div className='overflow-hidden h-[2000px] max-w-[2000px]'>
+    <div className='overflow-hidden h-[5000px] max-w-[2000px]'>
       <Hero/>  
       <Category/>
       <Job/>

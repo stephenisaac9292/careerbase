@@ -7,7 +7,7 @@ import { LuRocket } from 'react-icons/lu'
 import { MdOutlineMedicalServices } from 'react-icons/md'
 import { PiPaintBrushBroadDuotone } from 'react-icons/pi'
 import { RiCustomerService2Fill } from 'react-icons/ri'
-import SectionHeading from './CategoryComponents/SectionHeading'
+import SectionHeading from '../../Helper/SectionHeading'
 import CategoryCard from './CategoryComponents/CategoryCard'
 
 const categoryConstants = [
