@@ -1,9 +1,9 @@
-import { NavLinks } from '@/constant/constant'
+import { NavLinks } from '@/components/Home/Navbar/NavConstants/navConstant'
 import React from 'react'
 import { LuNetwork } from 'react-icons/lu'
 import Link from 'next/link'
 import { HiBars3BottomRight } from 'react-icons/hi2'
-import ScrollShadowWrapper from './NavbarCSR/ScrollShadowWrapper'
+import ScrollShadowWrapper from './ScrollShadowWrapper'
 import ThemeToggler from '@/components/Helper/ThemeToggler'
 
 
@@ -15,9 +15,9 @@ const Nav = ({openNav}:Props) => {
   return (
     <ScrollShadowWrapper>
     {/* Entire Navbar */}
-    <div className='dark:bg-neutral-950 fixed top-0 w-full z-[10000] h-[12vh] transition-all duration-200'>
+    <div className='dark:bg-neutral-950 fixed top-0 w-full z-[10000] h-[12vh] transition-all duration-200 backdrop-blur-md'>
         {/* Upper Holder Div */}
-        <div className="dark:bg-neutral-950 max-w-[1500px] w-[92%] mx-auto flex items-center justify-between h-full">
+        <div className="max-w-[1500px] w-[92%] mx-auto flex items-center justify-between h-full">
 
             {/* Logo + NavLinks (Left) */}
             <div className='flex items-center gap-x-14'>

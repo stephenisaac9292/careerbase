@@ -1,8 +1,8 @@
 'use client'
 import React, { useState } from 'react'
-import Nav from './Nav'
-import MobileNav from './MobileNav'
-import ThemeToggler from '@/components/Helper/ThemeToggler'
+import Nav from './NavbarComponents/Nav'
+import MobileNav from './NavbarComponents/MobileNav'
+ 
 
 
 const ResponsiveNav = () => {

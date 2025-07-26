@@ -23,8 +23,10 @@ const ThemeToggler = () => {
         className='p-2 transition w-10 h-10 bg-blue-950 dark:bg-white rounded-full 
                 flex flex-col items-center justify-center '
     >
-        {currentTheme === "dark" ? <BiSun className='text-white dark:text-black w-7 h-7 cursor-pointer'/> :
-        <BiMoon className='text-white dark:text-black w-7 h-7 cursor-pointer'/>}
+        {
+            currentTheme === "dark" ? <BiSun className='text-white dark:text-black w-7 h-7 cursor-pointer'/> :
+                                      <BiMoon className='text-white dark:text-black w-7 h-7 cursor-pointer'/>
+        }
         
     </button>
 
